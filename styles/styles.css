@@ -132,15 +132,15 @@
 }
 
 .btn--secondary {
-	border: 0.0625rem solid #555;
-	background-color: #555;
+	border: 0.0625rem solid #373239;
+	background-color: #373239;
 	color: #fff;
 }
 
 .btn--secondary:hover,
 .btn--secondary:focus,
 .btn--secondary:active {
-	border: 0.0625rem solid #555;
+	border: 0.0625rem solid #373239;
 	background-color: #fff;
 	color: #555;
 }
@@ -173,6 +173,7 @@
 
 .delivery-meals-number {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
@@ -180,14 +181,16 @@
 	font-weight: 500;
 }
 
-.delivery-meals-number span {
+.delivery-meals-number .font-size-xxl {
+	font-size: 3.5rem;
+	font-weight: 600;
 	color: #196f54;
-	margin-right: 0.25rem;
 }
 
-.font-size-xxl {
-	font-size: 2.5rem;
-	font-weight: 600;
+.delivery-meals-number span {
+	color: #373239;
+	font-size: 1.25rem;
+	font-weight: 700;
 }
 
 .featured-section {
@@ -197,6 +200,7 @@
 }
 
 .featured-section .heading-secondary {
+	font-weight: 700;
 	padding: 1rem 0;
 	text-align: center;
 }
@@ -214,6 +218,8 @@
 
 .featured-brand-logos img {
 	width: 12%;
+	-webkit-filter: grayscale(60%);
+	filter: grayscale(60%);
 }
 
 .how-section {
@@ -223,11 +229,13 @@
 .how-section .heading-secondary {
 	color: #e67e22;
 	text-align: center;
+	font-weight: 700;
 }
 
 .how-section .subheading-text {
 	font-weight: 700;
 	text-align: center;
+	padding: 1.5rem 0;
 	margin-bottom: 2.5rem;
 }
 
@@ -269,4 +277,97 @@
 	align-items: center;
 	width: 100%;
 	background-color: #fdf2e9;
+}
+
+.meals-section .heading-secondary {
+	font-weight: 700;
+	color: #e77e23;
+	padding: 0.75rem 0;
+	text-align: center;
+}
+
+.meals-section .subheading-text {
+	font-weight: 700;
+	text-align: center;
+}
+
+.meal-cards {
+	padding: 2rem 0;
+}
+
+.meal {
+	border-radius: 0.75rem;
+	box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.17);
+}
+
+.meal-image {
+	border-top-left-radius: 0.75rem;
+	border-top-right-radius: 0.75rem;
+}
+
+.meal-category {
+	font-size: 0.888rem;
+	color: #196f54;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 0.25rem 0;
+}
+
+.meal-name {
+	font-weight: 700;
+	padding: 0.25rem 0;
+}
+
+.meal-attributes-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	padding: 0.5rem 0;
+}
+
+.meal-attributes-list-item {
+	display: flex;
+	align-items: center;
+	font-size: 1.125rem;
+}
+
+.meal-attributes-list-item b {
+	margin-right: 0.25rem;
+}
+
+.meal-attribute-icon {
+	color: #e77e23;
+	margin-right: 0.25rem;
+}
+
+.diet-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 0.5rem;
+	padding: 0;
+}
+
+.diet-list h3 {
+	font-weight: 700;
+}
+
+.diet-list-item {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	font-size: 1.125rem;
+	color: #555;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.diet-list-item-icon {
+	color: #e77e23;
+}
+
+.see-all-recipes-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
