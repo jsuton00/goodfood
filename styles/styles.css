@@ -1,5 +1,5 @@
 .container {
-	max-width: 80rem;
+	max-width: 90rem;
 	padding: 0 2rem;
 	margin: 0 auto;
 }
@@ -19,6 +19,10 @@
 
 .grid--4-cols {
 	grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+	grid-template-columns: repeat(5, 1fr);
 }
 
 .header {
@@ -601,4 +605,175 @@
 
 .feature-text {
 	line-height: 1.5;
+}
+
+.cta-section {
+	padding: 1rem 0 2rem;
+}
+
+.cta {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	background-image: linear-gradient(to right bottom, #eb984e, #fdf2e9);
+	box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.17);
+	padding: 0;
+	overflow: hidden;
+	border-radius: 0.75rem;
+}
+
+.cta-text-container {
+	padding: 4rem;
+	color: #39343b;
+}
+
+.cta-text-container .heading-secondary {
+	color: #39343b;
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+.cta-text {
+	font-size: 1.25rem;
+	line-height: 1.8;
+	margin-bottom: 3rem;
+}
+
+.cta-img-container {
+	background-image: linear-gradient(
+			to right bottom,
+			rgba(235, 152, 78, 0.35),
+			rgba(230, 126, 34, 0.35)
+		),
+		url('../img/eating.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	padding: 0;
+}
+
+.cta-form {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	-moz-column-gap: 2rem;
+	column-gap: 2rem;
+	row-gap: 1.5rem;
+}
+
+.cta-form label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 0.75rem;
+}
+
+.cta-form input {
+	width: 100%;
+	padding: 0.75rem;
+	font-size: 1.125rem;
+	border-radius: 0.75rem;
+	border: 0.0625rem solid #fff;
+}
+
+.cta-form input::-webkit-input-placeholder {
+	color: #aaa;
+}
+
+.cta-form input::-moz-placeholder {
+	color: #aaa;
+}
+
+.cta-form input:-ms-input-placeholder {
+	color: #aaa;
+}
+
+.cta-form input::-ms-input-placeholder {
+	color: #aaa;
+}
+
+.cta-form input::placeholder {
+	color: #aaa;
+}
+
+.cta-form select {
+	width: 100%;
+	padding: 0.75rem;
+	font-size: 1.125rem;
+	border-radius: 0.75rem;
+	border: 0.0625rem solid #fff;
+}
+
+.sign-up-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.sign-up-row .btn--primary {
+	padding: 0.75rem 2rem;
+	background-color: #e77e23;
+	width: 100%;
+	margin-top: 1.7rem;
+}
+
+.sign-up-row .btn--primary:hover {
+	border: 0.0625rem solid #e77e23;
+	background-color: #fff;
+	color: #e77e23;
+}
+
+.footer {
+	background-color: #373239;
+	width: 100%;
+	padding: 2.2rem 0 4rem;
+	color: #fff;
+}
+
+.footer-heading {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.logo-col,
+.address-contact-col,
+.nav-col {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 0;
+}
+
+.logo-col p {
+	margin-top: 0.5rem;
+}
+
+.contacts {
+	padding: 0.5rem 0;
+}
+
+.contacts li {
+	padding: 0.25rem 0;
+}
+
+.contacts a {
+	color: #fff;
+}
+
+.footer-nav {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 0.25rem 0;
+}
+
+.footer-nav a {
+	color: #fff;
+}
+
+.social-media-link {
+	font-size: 1.33rem;
+}
+
+.social-media-link a {
+	color: #fff;
 }

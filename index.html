@@ -23,7 +23,9 @@
 	</head>
 	<body>
 		<header class="header">
-			<img src="./img/goodfood-logo.png" class="logo" alt="GoodFood logo" />
+			<a href="#">
+				<img src="./img/goodfood-logo.png" class="logo" alt="GoodFood logo"
+			/></a>
 			<nav class="main-nav">
 				<ul class="main-nav-list">
 					<li class="main-nav-list-item"><a href="#">Section 1</a></li>
@@ -523,7 +525,169 @@
 					</div>
 				</div>
 			</div>
+			<div class="cta-section">
+				<div class="container">
+					<div class="cta">
+						<div class="cta-text-container">
+							<h2 class="heading-secondary">Try out our free sample meals</h2>
+							<p class="cta-text">
+								Healthy, tasty and hassle-free meals are waiting for you. Start
+								eating well today. You can cancel or pause anytime. And the
+								first meal is on us!
+							</p>
+
+							<form class="cta-form">
+								<div class="form-input-row">
+									<label for="name">Full Name</label>
+									<input
+										name="name"
+										type="text"
+										class="cta-form-input"
+										placeholder="Write in your full name"
+										required
+									/>
+								</div>
+								<div class="form-input-row">
+									<label for="email">Email Address</label>
+									<input
+										name="email"
+										type="email"
+										class="cta-form-input"
+										placeholder="Email address"
+										required
+									/>
+								</div>
+								<div class="form-row">
+									<label for="select-where">Where did you hear from us?</label>
+									<select name="select-where" required>
+										<option value="family-friends">Family and friends</option>
+										<option value="google-search">Search Engines</option>
+										<option value="social-media">Social Media</option>
+										<option value="news">News</option>
+										<option value="newsletter">Newsletter</option>
+										<option value="other">Other</option>
+									</select>
+								</div>
+								<div class="form-row sign-up-row">
+									<button class="btn btn--primary">Sign Up</button>
+								</div>
+							</form>
+						</div>
+
+						<div
+							class="cta-img-container"
+							role="img"
+							aria-label="Woman enjoying eating food"
+						></div>
+					</div>
+				</div>
+			</div>
 		</main>
+		<footer class="footer">
+			<div class="container grid grid--5-cols">
+				<div class="logo-col">
+					<a href="#">
+						<img
+							src="./img/goodfood-logo.png"
+							class="logo footer-logo"
+							alt="GoodFood logo"
+					/></a>
+					<p class="social-media-links">
+						<span class="social-media-link">
+							<a
+								href="https://www.facebook.com/goodfood.hr/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<ion-icon name="logo-facebook"></ion-icon
+							></a>
+						</span>
+						<span class="social-media-link">
+							<a
+								href="https://www.instagram.com/goodfoodcro/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<ion-icon name="logo-instagram"></ion-icon
+							></a>
+						</span>
+						<span class="social-media-link">
+							<a
+								href="https://www.linkedin.com/company/goodfood"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<ion-icon name="logo-linkedin"></ion-icon
+							></a>
+						</span>
+						<span class="social-media-link">
+							<a
+								href="https://www.youtube.com/user/goodfood"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<ion-icon name="logo-youtube"></ion-icon
+							></a>
+						</span>
+						<span class="social-media-link">
+							<a
+								href="https://pinterest.com/goodfood"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<ion-icon name="logo-pinterest"></ion-icon
+							></a>
+						</span>
+					</p>
+					<p class="copyright">
+						Copyright &copy; 2022 GoodFood, Inc. All rights reserved.
+					</p>
+				</div>
+				<div class="address-contact-col">
+					<p class="footer-heading">Contact us</p>
+					<ul class="contacts">
+						<li>
+							<ion-icon name="location-outline"></ion-icon> 623 Harrison St.,
+							2nd Floor, San Francisco, CA 94107
+						</li>
+						<li>
+							<ion-icon name="call-outline"></ion-icon>
+							<a href="tel:415-201-6370">415-201-6370</a>
+						</li>
+						<li>
+							<ion-icon name="mail-outline"></ion-icon>
+							<a href="mailto:hello@goodfood.com">hello@omnifood.com</a>
+						</li>
+					</ul>
+				</div>
+				<nav class="nav-col">
+					<p class="footer-heading">Account</p>
+					<ul class="footer-nav">
+						<li><a href="#">Create account</a></li>
+						<li><a href="#">Sign in</a></li>
+						<li><a href="#">iOS app</a></li>
+						<li><a href="#">Android app</a></li>
+					</ul>
+				</nav>
+				<nav class="nav-col">
+					<p class="footer-heading">Corporate</p>
+					<ul class="footer-nav">
+						<li><a href="#">About Omnifood</a></li>
+						<li><a href="#">For Business</a></li>
+						<li><a href="#">Cooking partners</a></li>
+						<li><a href="#">Careers</a></li>
+					</ul>
+				</nav>
+				<nav class="nav-col">
+					<p class="footer-heading">Miscellaneous</p>
+					<ul class="footer-nav">
+						<li><a href="#">Recipe directory</a></li>
+						<li><a href="#">Help center</a></li>
+						<li><a href="#">Privacy & terms</a></li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
