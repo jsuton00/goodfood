@@ -4,6 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="GoodFood -The smart 365-days-per-year food subscription that will make you
+		eat healthy every day."
+		/>
+		<link rel="icon" href="./img/favicon.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -19,6 +25,7 @@
 		/>
 		<link rel="stylesheet" href="./styles/resets.css" />
 		<link rel="stylesheet" href="./styles/styles.css" />
+		<link rel="stylesheet" href="./styles/responsive.css" />
 		<title>GoodFood</title>
 	</head>
 	<body>
@@ -28,10 +35,14 @@
 			/></a>
 			<nav class="main-nav">
 				<ul class="main-nav-list">
-					<li class="main-nav-list-item"><a href="#">Section 1</a></li>
-					<li class="main-nav-list-item"><a href="#">Section 2</a></li>
-					<li class="main-nav-list-item"><a href="#">Section 3</a></li>
-					<li class="main-nav-list-item"><a href="#">Section 4</a></li>
+					<li class="main-nav-list-item">
+						<a href="#how-it-works">How it works</a>
+					</li>
+					<li class="main-nav-list-item"><a href="#meals">Meals</a></li>
+					<li class="main-nav-list-item">
+						<a href="#testimonials">Testimonials</a>
+					</li>
+					<li class="main-nav-list-item"><a href="#pricing">Pricing</a></li>
 					<li class="main-nav-list-item">
 						<a href="#" class="btn btn--primary"
 							>Download <ion-icon name="download-outline"></ion-icon
@@ -39,6 +50,10 @@
 					</li>
 				</ul>
 			</nav>
+			<button class="mobile-nav-btn">
+				<ion-icon class="mobile-nav-btn-icon" name="menu-outline"></ion-icon>
+				<ion-icon class="mobile-nav-btn-icon" name="close-outline"></ion-icon>
+			</button>
 		</header>
 		<main>
 			<div class="hero-section">
@@ -87,22 +102,31 @@
 				<div class="container">
 					<h2 class="heading-secondary">Featured in</h2>
 					<div class="featured-brand-logos">
-						<img
-							src="./img/logos/business-insider.png"
-							alt="Business Insider"
-						/>
-						<img src="./img/logos/forbes.png" alt="Forbes" />
-						<img src="./img/logos/techcrunch.png" alt="Techcrunch" />
-						<img
-							src="./img/logos/the-new-york-times.png"
-							alt="The New York Times"
-						/>
-
-						<img src="./img/logos/usa-today.png" alt="USA Today" />
+						<div class="featured-brand-logo">
+							<img
+								src="./img/logos/business-insider.png"
+								alt="Business Insider"
+							/>
+						</div>
+						<div class="featured-brand-logo">
+							<img src="./img/logos/forbes.png" alt="Forbes" />
+						</div>
+						<div class="featured-brand-logo">
+							<img src="./img/logos/techcrunch.png" alt="Techcrunch" />
+						</div>
+						<div class="featured-brand-logo">
+							<img
+								src="./img/logos/the-new-york-times.png"
+								alt="The New York Times"
+							/>
+						</div>
+						<div class="featured-brand-logo">
+							<img src="./img/logos/usa-today.png" alt="USA Today" />
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="how-section">
+			<div id="how-it-works" class="how-section">
 				<div class="container">
 					<h2 class="heading-secondary">How GoodFood works</h2>
 					<p class="subheading-text">
@@ -150,7 +174,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="meals-section">
+			<div id="meals" class="meals-section">
 				<div class="container">
 					<h2 class="heading-secondary">Meals</h2>
 					<p class="subheading-text">Omnifood AI chooses from 5,000+ recipes</p>
@@ -296,7 +320,7 @@
 					<a href="#" class="btn btn--primary">See all recipes &rarr;</a>
 				</div>
 			</div>
-			<div class="testimonial-gallery-section">
+			<div id="testimonials" class="testimonial-gallery-section">
 				<div class="container grid grid--2-cols">
 					<div class="testimonials">
 						<div class="testimonials-subheading col-span">
@@ -390,7 +414,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="pricing-section">
+			<div id="pricing" class="pricing-section">
 				<div class="container pricing-section-heading">
 					<h2 class="heading-secondary">Pricing plans</h2>
 					<p class="subheading-text">
@@ -532,8 +556,8 @@
 							<h2 class="heading-secondary">Try out our free sample meals</h2>
 							<p class="cta-text">
 								Healthy, tasty and hassle-free meals are waiting for you. Start
-								eating well today. You can cancel or pause anytime. And the
-								first meal is on us!
+								eating well today. You can cancel or pause anytime. The first
+								meal is on us!
 							</p>
 
 							<form class="cta-form">
@@ -640,7 +664,8 @@
 						</span>
 					</p>
 					<p class="copyright">
-						Copyright &copy; 2022 GoodFood, Inc. All rights reserved.
+						Copyright &copy; <span class="copyright-year"></span>GoodFood, Inc.
+						All rights reserved.
 					</p>
 				</div>
 				<div class="address-contact-col">
@@ -688,6 +713,10 @@
 				</nav>
 			</div>
 		</footer>
+		<a href="#" class="return-to-the-top-btn">
+			<ion-icon name="chevron-up-outline"></ion-icon>
+		</a>
+		<script src="./js/index.js"></script>
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -695,6 +724,10 @@
 		<script
 			nomodule
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+		<script
+			defer
+			src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
 		></script>
 	</body>
 </html>

@@ -26,12 +26,22 @@
 }
 
 .header {
+	position: fixed;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 100%;
+	max-width: 100%;
 	height: 5rem;
 	padding: 0 2rem;
 	background-color: #fdf2e9;
+}
+
+.header--fixed {
+	position: fixed;
+	width: 100%;
+	max-width: 100%;
+	background-color: transparent;
 }
 
 .logo {
@@ -227,15 +237,20 @@
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
-	max-width: 100%;
 	padding: 1rem;
 	margin: 0 auto;
 }
 
+.featured-brand-logo {
+	flex-basis: 12%;
+	width: 100%;
+}
+
 .featured-brand-logos img {
-	width: 12%;
+	width: 100%;
 	-webkit-filter: grayscale(60%);
 	filter: grayscale(60%);
+	margin: 0 auto;
 }
 
 .how-section {
@@ -768,7 +783,7 @@
 }
 
 .contacts a {
-	color: #fff;
+	color: #373239;
 }
 
 .address-contact-col {
@@ -802,4 +817,30 @@
 
 .social-media-link a {
 	color: #373239;
+}
+
+.mobile-nav-btn {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	display: none;
+}
+
+.mobile-nav-btn-icon {
+	height: 3rem;
+	width: 3rem;
+}
+
+.mobile-nav-btn-icon[name='close-outline'] {
+	display: none;
+}
+
+.copyright-year {
+	margin: 0 0.125rem;
+}
+
+.return-to-the-top-btn {
+	position: fixed;
+	bottom: 5;
+	right: 5;
 }

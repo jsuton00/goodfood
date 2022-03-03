@@ -1,0 +1,178 @@
+@media (max-width: 1440px) {
+	.hero {
+		max-width: 81.25rem;
+	}
+
+	.gallery {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 1108px) {
+	.hero-container {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+
+	.hero-text-box,
+	.hero-img-box {
+		padding: 1rem;
+		text-align: center;
+	}
+
+	.hero-description {
+		margin-bottom: 1rem;
+	}
+
+	.hero-btn-row {
+		justify-content: center;
+	}
+
+	.hero-img {
+		width: 70%;
+	}
+
+	.featured-brand-logo {
+		flex-basis: 50%;
+		padding: 1rem;
+	}
+
+	.meal-cards {
+		grid-template-columns: 1fr;
+		padding: 2rem;
+	}
+
+	.testimonial-gallery-section .container {
+		grid-template-columns: 1fr;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.testimonials {
+		grid-template-columns: 1fr;
+	}
+
+	.gallery {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.diet-list,
+	.diet-list-item {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.features {
+		grid-template-columns: 1fr;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.feature-header {
+		justify-content: center;
+	}
+
+	.footer .container {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	.main-nav {
+		background-color: rgba(255, 255, 255, 0.973);
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		transform: translateX(100%);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 1s ease-in-out;
+
+		opacity: 0;
+		pointer-events: none;
+		visibility: hidden;
+	}
+
+	.nav-open .main-nav {
+		opacity: 1;
+		pointer-events: auto;
+		visibility: visible;
+		transform: translateX(0);
+	}
+
+	.main-nav-list {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		font-size: 2rem;
+	}
+
+	.main-nav-list-item .btn--primary {
+		font-size: 2rem;
+	}
+
+	.mobile-nav-btn {
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+		display: block;
+	}
+
+	.mobile-nav-btn-icon {
+		width: 3rem;
+		height: 3rem;
+		color: #373239;
+	}
+
+	.mobile-nav-btn-icon[name='close-outline'] {
+		display: none;
+	}
+
+	.nav-open .mobile-nav-btn-icon[name='menu-outline'] {
+		display: none;
+	}
+
+	.nav-open .mobile-nav-btn-icon[name='close-outline'] {
+		display: block;
+	}
+
+	.how-section .container:nth-child(2) {
+		grid-template-columns: 1fr;
+	}
+
+	.pricing-plans {
+		grid-template-columns: 1fr;
+	}
+
+	.cta {
+		grid-template-columns: 1fr;
+	}
+
+	.cta-form {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 485px) {
+	.hero-text-box .heading-primary {
+		font-size: 3rem;
+	}
+	.hero-description {
+		font-size: 1.5rem;
+		padding: 1rem;
+	}
+
+	.step-card-images img {
+		padding: 1rem;
+	}
+}
+
+@media (max-width: 476px) {
+	.hero-btn-row {
+		gap: 0.5em;
+	}
+}
